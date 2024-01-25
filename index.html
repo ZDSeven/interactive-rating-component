@@ -15,49 +15,57 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 
 </head>
 
 <body>
   <div class="wrapper">
+
     <!-- Rating state start -->
-    <div class="layout-flex">
-      <div class="card">
-        <div class="card__content">
-          <div class=" card__icon">
-            <img src="images/icon-star.svg" alt="">
-          </div>
-          <h1>How did we do?</h1>
-          <p>Please let us know how we did with your support request. All feedback is appreciated
-            to help us improve our offering!</p>
-          <div class="card__options">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-          </div>
-          <button class="card__button">
-            Submit
-          </button>
+    <div id="rating-state" class="card">
+      <div class="card__content">
+        <div class=" card__icon">
+          <img src="images/icon-star.svg" alt="">
+        </div>
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+        <div id="options" class="card__options">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+        </div>
+        <button class="card__button" id="Button1">
+          Submit
+        </button>
+      </div>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div id=" thank-you-state" class="card">
+      <div class="card__content thank-you-state">
+        <div class="card__image">
+          <img src="images/illustration-thank-you.svg" alt="">
+        </div>
+        <div class="card__choice">
+          You selected <span id="rating"></span> out of 5
+        </div>
+        <div class="card__header">
+          <h1>Thank you!</h1>
+        </div>
+        <div class="card__message">
+          <p>We appreciate you taking the time to give a rating. If you ever need more support,
+            don't hesitate to get in touch!</p>
         </div>
       </div>
     </div>
+    <!-- Thank you state end  -->
+
   </div>
-
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected Add rating here out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don't hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
 
 </body>
 
